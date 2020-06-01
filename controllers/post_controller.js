@@ -1,1 +1,5 @@
-module.exports.post = (req, res) => res.end('<h1>This is post controller working</h1>');
+module.exports.post = (req, res) => {
+	return res.render('post', {
+		title: 'Post'
+	});
+};
