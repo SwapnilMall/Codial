@@ -1,5 +1,8 @@
-module.exports.home = (req, res) => {
-	return res.render('home', {
-		title: 'home'
-	});
-};
+module.exports.home = function(req, res){
+    
+    return res.render('home', {
+        title: "Home"
+    });
+}
+
+// module.exports.actionName = function(req, res){}
