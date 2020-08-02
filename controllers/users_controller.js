@@ -18,9 +18,6 @@ module.exports.profile = function (req, res) {
         return res.redirect('/users/sign-in');
 
     }
-
-
-
 }
 
 
@@ -89,10 +86,10 @@ module.exports.createSession = function (req, res) {
 
 
     });
+}
 
 
-
-
-
-
+module.exports.signout = function (req, res) {
+    res.clearCookie('user_id');
+    return res.redirect('/users/sign-in');
 }
